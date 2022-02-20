@@ -1,0 +1,149 @@
+
+<head>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div class="redi-btn">
+ <img src="/img/calcu3.png"  id="img-calcu" alt="">
+<a id="boton-redireccionar" href="/calculadora.html" >Calculadora de aguinaldo</a>
+</div>
+
+  <div class="card">
+    <div id="items-card">
+      <form action="" name="rgForm" id="formulario" >
+        <!-- Grupo: ID -->
+        <div class="formulario_grupo" id="grupo_id">
+          <label for="" class="labels">ID</label>
+          <div class="formulario_grupo-input">
+            <input type="text" id="inpId" name="id" >
+          </div>
+         
+          <p class="alert_input_id">Este apartado es obligatorio</p>
+          <p class="alert_input">Ese ID ya existe por favor escoge otro</p>
+        </div>
+          <!-- Grupo: Name -->
+        <div class="inputs-register" class="formulario_grupo" id="grupo_name">
+      
+         <label for="" class="labels">NAME</label>
+              <div class="formulario_grupo-input" >
+                <input type="text" id="inpNm" name="namep" >
+              </div>
+          
+           <p  class="alert_input_id" >Este apartado es obligatorio</p>
+           
+          
+        </div>
+        <div>
+          <label for="" class="labels">status</label>
+          <input type="checkbox" name="" id="checkSta">
+        </div>
+
+    </form>
+
+    <div class="dropdown">
+      <button onclick="myFunction()" class="btn-dropdown" >Assignee</button>
+          <div id="myDropdown" class="content-dropdown">
+              <a id="frank">Frank</a>
+              <a id="john">John</a>
+              <a id="alice">Alice</a>
+              <a id="mary">Mary</a>
+          </div>
+    
+  
+  
+    </div>   
+    <button id="saveReg"  type="submit">Save</button>
+
+   
+    </div>
+ 
+
+</div>
+
+
+<!-- card table -->
+
+
+<div class="card-table">
+  <div class="container-table" >
+    <table      id="table1"  >
+      <thead class="thead-container">
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+       <th>Assigne</th>
+       <th>Status</th>
+       <th>Creation date</th>
+        </tr>
+        
+      </thead>
+      <div class="tbody-container">
+        <tbody class="body-table" >
+                     <tr>
+                <td colspan="5">&nbsp;</td>
+            </tr>
+        </tbody>
+      </div>
+     
+  
+    </table>
+  </div>
+
+  <div id="inputs-right">
+
+<!--grupo delete-->
+
+  <div id="grupo-delete">
+    <label class="labels">Delete user</label>
+    <div>
+   <input type="text" id="inp-delete" placeholder="ID del usuario a eliminar" >
+    </div>
+    <p class="alert_input">El Id no pertenece a ningun usuario</p>
+   
+  </div>
+  <button id="btn-deleteU">Delete</button>
+<!--grupo search-->
+<div id="grupo-search">
+  <label class="labels">Search user</label>
+  <div>
+    <input  id="inp-search" type="text" placeholder="ID del usuario a buscar">
+  </div>
+  <p class="alert_input">El Id no pertenece a ningun usuario</p>
+  <button id="btn-searchU">Search</button>
+  </div>
+
+
+</div>
+
+
+<div id="buttons-left">
+<!--grupo filter by status-->
+<div class="dropdown">
+  <button onclick="myFunction2()" class="btn-dropdown" >Assignee</button>
+      <div id="myDropdown2" class="content-dropdown">
+          <a id="done">Done</a>
+          <a id="pending">Pending</a>
+      </div>
+  
+
+</div>
+
+
+
+<!--grupo creation date-->
+
+<div class="dropdown">
+  <button onclick="myFunction3()" class="btn-dropdown" >Order elements</button>
+      <div id="myDropdown3" class="content-dropdown">
+          <a id="recent">Recent date</a>
+          <a id="late">late date </a>
+      </div>
+
+    </div>
+
+  </div>
+
+<script src="web1.js"></script>
+
+</body>
