@@ -1,1 +1,0 @@
-# mayiPalacios.github.io

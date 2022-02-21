@@ -1,0 +1,127 @@
+body {
+    background-color: rgb(250, 241, 241);
+    ;
+}
+
+.card {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(250, 241, 241);
+    height: calc(100vh - 64px);
+    margin: 5vh;
+    margin-left: 70vh;
+    background: var(--card-color);
+    width: 500px;
+    padding: 30px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.377);
+    border-radius: 20px;
+    height: calc(80vh - 60px);
+
+}
+
+
+
+.grupo {
+    padding-bottom: 4vh;
+
+}
+
+#items-card input{
+    border-radius: 3px;
+    padding: 0.3vh;
+    width: 15vw;
+    margin-left: 2vw;
+}
+
+
+#btn-aguinaldo {
+    margin-left: 2vw;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 2vh;
+    background-color: grey;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.alert-empty {
+    display: none;
+}
+
+
+.quitAler-empty {
+    margin-left: 2vw;
+    display: block;
+    color: red;
+}
+
+.input-numer-error {
+    background-color: red;
+    border-color: red;
+}
+
+.ventana {
+    position: absolute;
+    width: 30%;
+    color: black;
+    font-size: 3vh;
+    text-align: center;
+    padding: 33px;
+    min-height: 22px;
+    border-radius: 22px;
+    background-color: #f4f4f4;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20vh;
+    display: flex;
+    height: calc(30vh - 64px);
+    margin-left: 65vh;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.377);
+    display: none;
+
+
+}
+
+#closed {
+    position: absolute;
+    right: 15px;
+    top: 11px;
+    cursor: pointer;
+    
+}
+
+#aguinaldoV {
+    background-color: #b6e8fb;
+    margin-top: 3vh;
+    color: black;
+    padding: 1vh;
+}
+
+.failed {
+    display: none;
+}
+
+.labelP {
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+/*              boton redireccionar       */
+
+#img-windows {
+    padding-right: 2vh;
+  }
+  
+  #boton-redireccionar {
+    display: flex;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #ddd;
+    background-color: #776e6e;
+    float: left;
+    margin: 0.1vh 1vw;
+    padding: 1.4vh 1vw;
+    font-size: 0.9vw;
+    cursor: pointer;
+    border-radius: 8px;
+  }

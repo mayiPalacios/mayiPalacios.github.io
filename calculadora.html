@@ -1,81 +1,84 @@
-
 <head>
-    <link href="calcuStyle.css" rel="stylesheet" type="text/css">
-   
+  <link href="calcu_Style.css" rel="stylesheet" type="text/css" />
 </head>
 
-
-
 <body>
-    <div class="redi-btn">
-        <img src="/img/registro.png"  id="img-calcu" alt="">
-       <a id="boton-redireccionar" href="/to-do-list.html" >Registro de usuarios</a>
-       </div>
-       
-    <div class="ventana" id="ven-agui">
-        <p > Su aguinaldo es de:</p>
-        <div id="aguinaldoV">
-       
-        </div>
-        <div id="cerrar"><a onclick="cerrar()"><img  src="/img/error (1).png" alt=""></a></div>
+  <div class="redi-btn">
+    <button id="boton-redireccionar" onclick="location.href='/user_List.html'">
+      <img src="/img/calcu3.png" id="img-windows" alt="" />Registro de usuarios
+    </button>
+  </div>
+  <div class="ventana" id="ven-agui">
+    <p>Su aguinaldo es de:</p>
+    <div id="aguinaldoV"></div>
+    <div id="closed">
+      <a onclick="closed()"><img src="/img/error (1).png" alt="" /></a>
     </div>
-    <div class="card">
-       <div id="items-card">
-        <form action="" name="rgForm" id="formulario">
-
-            <!--grupo salario-->
+  </div>
+  <div class="card">
+    <div id="items-card">
+      <form action="" name="rgForm" id="formulario">
+        <!--grupo salario-->
         <div class="grupo" id="groupSalary">
-            <ul>
-                <li><p class="labelP">Introduzca su salario mensual</p></li>
-            </ul>
-           
-            <div>
-                <input class="input-numer" type="number" id="inp-salary" name="salary">
-            </div>
-            <p class="alert-empty">Este apartado es obligatorio</p>
-          
+          <ul>
+            <li><p class="labelP">Introduzca su salario mensual</p></li>
+          </ul>
+
+          <div>
+            <input
+              class="input-numer"
+              type="number"
+              id="inp-salary"
+              name="salary"
+            />
+          </div>
+          <p class="alert-empty">Este apartado es obligatorio</p>
         </div>
 
-          <!--grupo anos-->
+        <!--grupo anos-->
         <div class="grupo" id="group-years">
-            <ul>
-                <li><p class="labelP">Introduzca cantidad de años de trabajo que tenga(no mayor a 35 años) </p></li>
-            </ul>
-            <div>
-                <input class="input-numer" type="number" name="years" id="inp-years" >
-            </div>
-            <p class="alert-empty">Este apartado es obligatorio</p>
-           
+          <ul>
+            <li>
+              <p class="labelP">
+                Introduzca cantidad de años de trabajo que tenga(no mayor a 35
+                años)
+              </p>
+            </li>
+          </ul>
+          <div>
+            <input
+              class="input-numer"
+              type="number"
+              name="years"
+              id="inp-years"
+            />
+          </div>
+          <p class="alert-empty">Este apartado es obligatorio</p>
         </div>
-           <!--grupo dias-->
-           <ul>
-            <li><p class="labelP">cantidad de dias (1 a 365)</p> </li>
-        </ul>
-        <div class="grupo"  id="group-days">
-            
-            <div>
-                <input class="input-numer" type="number" name="days" id="inp-days">
-               
-            </div>
-            <p class="alert-empty">Este apartado es obligatorio</p>
-          
-        </div>
-
-      </form>
-    <div>
+        <!--grupo dias-->
         <ul>
-            <li><p class="labelP">Calcule su aguinaldo</p></li>
+          <li><p class="labelP">cantidad de dias (1 a 365)</p></li>
+        </ul>
+        <div class="grupo" id="group-days">
+          <div>
+            <input
+              class="input-numer"
+              type="number"
+              name="days"
+              id="inp-days"
+            />
+          </div>
+          <p class="alert-empty">Este apartado es obligatorio</p>
+        </div>
+      </form>
+      <div>
+        <ul>
+          <li><p class="labelP">Calcule su aguinaldo</p></li>
         </ul>
         <button id="btn-aguinaldo">Calcular Aguinaldo</button>
+      </div>
     </div>
-       </div>
-    
-    </div>
-   
-    
-<script src="calcu.js"></script>
+  </div>
 
-
+  <script src="calcu.js"></script>
 </body>
-
-
